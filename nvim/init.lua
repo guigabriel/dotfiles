@@ -1,0 +1,15 @@
+print("Olá, GG! Seja bem-vindo!")
+
+require("user.plugins")
+require("user.keymaps")
+require("user.nvimTreeLua")
+require("user.settings")
+require("user.autopairs")
+require("user.togterminal")
+require("user.telescope")
+require("nvim-lsp-installer").setup {}
+require("user.buffer")
+require("user.line")
+require("user.cmp")
+require("user.lsp")
+require("user.treesitter")
