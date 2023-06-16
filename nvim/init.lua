@@ -10,5 +10,14 @@ if not vim.loop.fs_stat(lazypath) then
   })
 end
 vim.opt.rtp:prepend(lazypath)
-require("user.keymaps")
+
+local ok, lazy = pcall(require, "lazy")
+if not ok then
+  return
+end
+
 require("user.options")
+require("user.keymaps")
+--vim.cmd([[autocmd filetype java lua require('ftplugin.java').load()]])
+
+lazy.setup("user.plugins", { ui = { border = "rounded" } })
