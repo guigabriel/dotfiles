@@ -47,6 +47,7 @@ vim.opt.shortmess:append("c")
 vim.opt.whichwrap:append("<,>,[,],h,l")
 vim.opt.iskeyword:append("-")
 vim.cmd("set nofoldenable")
+vim.cmd(":hi linenr guibg=none guifg=#ffffff")
 
 vim.g.leetcode_solution_filetype = "java"
 vim.g.leetcode_browser = "firefox"
